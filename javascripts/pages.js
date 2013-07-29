@@ -5,8 +5,8 @@ jQuery(document).ready(function($) {
     var parsePublicJSON = function(data, textStatus, jqXHR) {
 
         $(data).each(function(idx, repo) {
-            $('#projects-container').append('<p><strong>' + 
-                repo.name + '</strong> - ' + repo.description + 
+            $('#projects-container').append('<p>' + 
+               '<a href="' + repo.html_url + '"><strong>' + repo.name + '</strong></a> - ' + repo.description + 
                 ' :: <span class="language">(' + repo.language + ')</span></p>');
         });
 
@@ -30,5 +30,15 @@ jQuery(document).ready(function($) {
         threshold: 40
     });
 
-    meny.open();
+    if(!meny.isOpen()) {
+        $('.meny').css('background', '#fff');
+    }
+
+    meny.addEventListener('close', function() {
+        $('.meny').css('background', '#fff');
+    });
+
+    meny.addEventListener('open', function() {
+        $('.meny').css('background', '#141414');
+    });
 });

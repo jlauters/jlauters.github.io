@@ -167,6 +167,13 @@ section {
   padding-bottom:50px;
 }
 
+.meny { color: #fff; padding: 1%; }
+.meny h2 { color: #f1f1f1; }
+.meny ul { list-style: none; }
+.meny ul li a { color: #f1f1f1; }
+
+.contents { padding: 1%; padding-left: 5%; }
+
 small {
   font-size:11px;
 }
@@ -179,10 +186,12 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
+  /* width:270px; */
+  /* float:left; */
   position:fixed;
   bottom:50px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media print, screen and (max-width: 960px) {

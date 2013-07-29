@@ -1,5 +1,6 @@
 jQuery(document).ready(function($) {
 
+    // get public repos
     var public_url = 'https://api.github.com/users/jlauters/repos?type=public';
     var parsePublicJSON = function(data, textStatus, jqXHR) {
 
@@ -17,6 +18,17 @@ jQuery(document).ready(function($) {
         alert(err);
     }
 
-    
+    // Meny Config
+    var meny = Meny.create({
+        menuElement: document.querySelector('.meny'),
+        contentsElement: document.querySelector('.contents'),
+        position: 'left',
+        height: 200,
+        width: 260,
+        mouse: true,
+        touch: true,
+        threshold: 40
+    });
 
+    meny.open();
 });

@@ -17,28 +17,4 @@ jQuery(document).ready(function($) {
     } catch (err) {
         alert(err);
     }
-
-    // Meny Config
-    var meny = Meny.create({
-        menuElement: document.querySelector('.meny'),
-        contentsElement: document.querySelector('.contents'),
-        position: 'left',
-        height: 200,
-        width: 260,
-        mouse: true,
-        touch: true,
-        threshold: 40
-    });
-
-    if(!meny.isOpen()) {
-        $('.meny').css('background', '#fff');
-    }
-
-    meny.addEventListener('close', function() {
-        $('.meny').css('background', '#fff');
-    });
-
-    meny.addEventListener('open', function() {
-        $('.meny').css('background', '#141414');
-    });
 });

@@ -1,11 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding:50px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
 }
+
+header { 
+    background: #333; 
+    color: #f1f1f1; 
+    width: 100%; 
+    min-height: 250px;
+    position: relative;
+}
+
+header h1 { color: #f1f1f1; padding: 3% 5%; padding-bottom: 0%; margin: 0 0 0px;  font-size: 6em; font-weight: lighter }
+header h1 .stronger { color: #f1f1f1; font-weight: bold; }
+header .smaller { padding: 0 5%; font-weight: lighter; font-size: 2em; }
+header .social { padding: 0 5%; font-weight: lighter; font-size: 1em; }
+header .social a { color: #f1f1f1; padding: 0 1%; }
+
+header #header-image-placeholder { height: 250px; background-color: #c3c3c3; width: 600px; display: inline-block; position: absolute; top: 0px; right: 0px; }
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
@@ -97,11 +112,11 @@ img {
   max-width:100%;
 }
 
-header {
+/* header {
   width:270px;
   float:left;
   position:fixed;
-}
+} */
 
 header ul {
   list-style:none;
@@ -174,6 +189,17 @@ section {
 
 .contents { padding: 1%; padding-left: 5%; }
 
+.contents .bio p { margin-top: 2%; font-weight: lighter; font-size: 2em; color: #333; }
+
+.contents .portfolio { margin-top: 5%; }
+.contents .portfolio h3,
+.contents .open-projects h3 { font-weight: lighter; font-size: 4em; }
+
+.portfolio-item { margin: 2% auto; }
+.portfolio-item .portfolio-info { height: 100%; min-height: 150px; }
+.portfolio-item .portfolio-info h5 { font-weight: lighter; font-size: 2em; margin: 0;}
+.portfolio-item .portfolio-description { padding: 2% 0; width: 80%; }
+
 small {
   font-size:11px;
 }
@@ -186,10 +212,6 @@ hr {
 }
 
 footer {
-  /* width:270px; */
-  /* float:left; */
-  position:fixed;
-  bottom:50px;
   margin: 0 auto;
   text-align: center;
 }

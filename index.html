@@ -17,29 +17,92 @@
     <![endif]-->
   </head>
   <body>
-      <h1>Jon Lauters</h1>
+      <header>
+       <h1>Jon <span class="stronger">Lauters</span></h1>
+       <span class="smaller">Web Application Developer</span>
+       
+       <div class="social">
+           <div><i class="icon-github"></i><a href="http://github.com/jlauters">github.com/jlauters</a></div> 
+           <div><i class="icon-linkedin"></i><a href="www.linkedin.com/in/jonlauters/">linkedin.com/in/jonlauters/</a></div>
+       </div>
 
-      <div class="meny" >
-          <h2>Social Links</h2>
-          <ul>
-              <li><a href="https://github.com/jlauters">github.com/jlauters</a></li>
-              <li><a href="www.linkedin.com/in/jonlauters/">linkedin.com/in/jonlauters</a></li>
-          </ul>
-      </div>
+       <div id="header-image-placeholder"><img src="gh_pages_header.png"></div>
+
+      </header>
 
       <div class="contents">
-        <h3>Open Projects</h3>
-        <div id="projects-container"></div>
+
+          <div class="bio">
+              <p>Motivated Web Developer who specializes in custom PHP and Javascript implementations. 
+                 Comfortable working solo or as part of a larger team. I want to help you get your project
+                 done the right way as well as on time and under budget.
+              </p>
+          </div>
+
+          <div class="portfolio">
+              <h3>Work</h3>
+
+              <div class="portfolio-item">
+                  <div class="portfolio-info">
+                      <h5>Armada Medical Marketing</h5>
+                      <a href="http://armadamedical.com">http://armadamedical.com</a>
+                      <p class="portfolio-description">
+                          I came into the Armada project mid development and helped finished up functionality in the "What We Do" 
+                          section as well as make some tweaks to the responsive design media queries to ensure a good layout for
+                          modern mobile devices and web browsers.
+                      </p>
+                  </div>
+              </div>
+
+              <div class="portfolio-item">
+                  <div class="portfolio-info">
+                     <h5>Fossil Insect Collaborative Digitization Project</h5>
+                      <a href="http://fossilinsects.colorado.edu">http://fosilinsects.colordo.edu</a>
+                      <p class="portfolio-description">
+                          I created a simple WordPress site to serve as a centralized information source for the NSF Funded
+                          fossilized insect digitization project undergoing at the Unveristy of Colorado's Natural History Museum
+                          along with several other academic institutions across the US.
+                      </p>
+                  </div>
+              </div>
+
+              <div class="portfolio-item">
+                  <div class="portfolio-info">
+                      <h5>Water Tech</h5>
+                      <a href="http://watertech.com">http://watertech.com</a>
+                      <p class="portfolio-description">
+                          I came in towards the end of the Water Tech project to fill in where another developer had left off. 
+                          My focus on this project was to finish up customizations of a Code Canyon (<a href="http://codecanyon.net/">http://codecanyon.net</a>)
+                          Store Locator Plugin that used the Google Maps API for reverse geocoding and location services. I also made changes
+                          to a CSV file import to allow the client an easy solution to updating their various supported territories.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="open-projects">
+              <h3>Open Projects</h3>
+              <p>
+                 These are a collection of late night ideas and small pieces of code 
+                 from project work I find myself repeating frequently.
+              </p>
+              <div id="projects-container"></div>
+          </div>
+
+          <footer>
+              <p><small>Hosted on GitHub Pages</small></p>
+          </footer>
+      </div>
+      
+      <!--<div class="contents">
+        
 
         <div id="push" style="height: 5em;"></div>
 
-        <footer>
-            <p><small>Hosted on GitHub Pages &mdash; Original theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-        </footer>
-      </div>
+        
+      </div>-->
 
-    <!-- Meny -->
-    <script src="javascripts/meny.js"></script>
+      
     <script src="javascripts/scale.fix.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="javascripts/pages.js"></script>

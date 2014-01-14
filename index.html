@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/dist/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -17,26 +18,41 @@
     <![endif]-->
   </head>
   <body>
-      <header>
-       <h1>Jon <span class="stronger">Lauters</span></h1>
-       <span class="smaller">Web Application Developer</span>
-       
-       <div class="social">
-           <div><i class="icon-github"></i><a target="_blank" href="http://github.com/jlauters">github.com/jlauters</a></div> 
-           <div><i class="icon-linkedin"></i><a target="_blank" href="http://www.linkedin.com/in/jonlauters/">linkedin.com/in/jonlauters/</a></div>
-       </div>
+      <header class="container-fluid">
+         <div class="no-pad row">
+             <div class="col-sm-6 business-card">
+                 <h1>Jon <span class="stronger">Lauters</span></h1>
+                 <span class="smaller">Web Application Developer</span>
+  
+                 <div class="social text-left">
+                     <div>
+                     <i class="icon-github"></i>
+                     <a target="_blank" href="http://github.com/jlauters">github.com/jlauters</a>
+                     </div>
+                     <div>
+                     <i class="icon-linkedin"></i>
+                     <a target="_blank" href="http://www.linkedin.com/in/jonlauters/">linkedin.com/in/jonlauters/</a>
+                     </div>
+                 </div>
+             </div>
 
-       <div id="header-image-placeholder"><img src="gh_pages_header.png"></div>
-
+             <div class="col-sm-6 header-img">
+                 <img class="img-responsive" src="gh_pages_header.png">
+             </div>
+         </div>
       </header>
 
-      <div class="contents">
+      <div class="contents container-fluid">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-12">
+                      <div class="bio">
+                          <p>Motivated Web Developer who specializes in PHP and Javascript implementations.</p>
+                      </div>
+                  </div>
+              </div>
 
-          <div class="bio">
-              <p>Motivated Web Developer who specializes in PHP and Javascript implementations.</p>
-          </div>
-
-          <div class="portfolio">
+             <div class="portfolio">
               <h3>Work</h3>
 
               <div class="portfolio-item">
@@ -85,23 +101,21 @@
               </p>
               <div id="projects-container"></div>
           </div>
-
-          <footer>
-              <p><small>Hosted on GitHub Pages</small></p>
-          </footer>
       </div>
+
+      <footer class="content-fluid">
+       <div class="rows">
+           <div class="col-xs-12">
+               <p><small>Hosted on GitHub Pages</small></p>
+           </div>
+       </div>
+      </footer>
+  </div>
       
-      <!--<div class="contents">
-        
-
-        <div id="push" style="height: 5em;"></div>
-
-        
-      </div>-->
-
       
     <script src="javascripts/scale.fix.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="stylesheets/dist/js/bootstrap.min.js"></script>
     <script src="javascripts/pages.js"></script>
     
   </body>

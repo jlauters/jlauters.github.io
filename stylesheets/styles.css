@@ -10,8 +10,11 @@ header {
     background: #333; 
     color: #f1f1f1; 
     width: 100%; 
-    min-height: 250px;
-    position: relative;
+    /* min-height: 250px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 
 header h1 { color: #f1f1f1; padding: 3% 5%; padding-bottom: 0%; margin: 0 0 0px;  font-size: 6em; font-weight: lighter }
@@ -19,8 +22,8 @@ header h1 .stronger { color: #f1f1f1; font-weight: bold; }
 header .smaller { padding: 0 5%; font-weight: lighter; font-size: 2em; }
 header .social { padding: 0 5%; font-weight: lighter; font-size: 1em; }
 header .social a { color: #f1f1f1; padding: 0 1%; }
-
-header #header-image-placeholder { height: 250px; background-color: #c3c3c3; width: 600px; display: inline-block; position: absolute; top: 0px; right: 0px; }
+header img { width: auto; height: 100%; margin: 0 auto; float: right; }
+header .business-card { text-align: left; padding-left: 4%; }
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
@@ -67,6 +70,8 @@ a small {
   margin:0 auto;
 }
 
+.container { padding-right: 0 !important; padding-left: 0 !important; margin-right: 0 !important; margin-left: 0 !important; }
+
 blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;
@@ -110,13 +115,12 @@ th {
 
 img {
   max-width:100%;
+  position: relative;
+  z-index: 2;
 }
 
-/* header {
-  width:270px;
-  float:left;
-  position:fixed;
-} */
+
+.no-pad { padding-left: 0px; padding-right: 0px; }
 
 header ul {
   list-style:none;
@@ -187,7 +191,7 @@ section {
 .meny ul { list-style: none; }
 .meny ul li a { color: #f1f1f1; }
 
-.contents { padding: 1%; padding-left: 5%; }
+.contents { padding: 1%; padding-left: 5%; margin-top: 250px; position: relative; z-index: 1; }
 
 .contents .bio p { margin-top: 2%; font-weight: lighter; font-size: 2em; color: #333; }
 
@@ -223,15 +227,17 @@ footer {
     margin:0;
   }
   
+
+  header h1 { font-size: 5em; }
+
+
   header, section, footer {
     float:none;
     position:static;
     width:auto;
   }
   
-  header {
-    padding-right:320px;
-  }
+  header { position: fixed; max-height: 160px; }
   
   section {
     border:1px solid #e5e5e5;
@@ -256,9 +262,11 @@ footer {
     word-wrap:break-word;
   }
   
-  header {
-    padding:0;
-  }
+
+  header h1 { font-size: 2em; line-height: 2em; }
+
+  header img { width: 100%; height: auto; margin: 0 auto; }
+
   
   header ul, header p.view {
     position:static;
@@ -270,13 +278,23 @@ footer {
 }
 
 @media print, screen and (max-width: 480px) {
-  body {
-    padding:15px;
-  }
   
   header ul {
     display:none;
   }
+
+  header { position: fixed; width: 100%; }
+  header h1 { font-size: 1.5em; }
+  header .smaller { font-size: 0.9em; }
+
+  header img { width: 100%; height: auto; margin: 0 auto; float: right; }
+
+   .contents { margin-top: 255px; }
+
+
+   header .business-card { text-align: center; padding-left: 0; }
+
+   .social { text-align: center !important; }
 }
 
 @media print {
